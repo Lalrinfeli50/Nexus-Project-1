@@ -11,7 +11,9 @@ This repository contains the code for the Nexus Info website, designed to help g
 
 ## Preview
 
-![Website Preview](path/to/your/nexus-info-preview.png)
+![Website Preview](images/cap1.png)
+![Website Preview](images/cap2.png)
+![Website Preview](images/cap3.png)
 
 ## Technologies Used
 
