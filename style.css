@@ -1,0 +1,248 @@
+body {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #09c7fb;
+  background-image: linear-gradient(315deg, #09c7fb 0%, #93fb9d 74%);
+  position: relative;
+  overflow: hidden;
+}
+
+
+.background-blur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(9, 199, 251, 0.6);
+  background-image: linear-gradient(315deg, rgba(9, 199, 251, 0.6) 0%, rgba(147, 251, 157, 0.6) 74%);
+  backdrop-filter: blur(10px); 
+  z-index: -1; 
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 800px;
+  height: auto;
+  min-height: 600px;
+  position: relative;
+  margin: 3% auto;
+  box-shadow: 2px 18px 70px 0px #9D9D9D;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.9); 
+}
+
+.login-text {
+  width: 100%;
+  height: 450px;
+  background-color: rgba(9, 199, 251, 0.8);
+  background-image: linear-gradient(315deg, rgba(9, 199, 251, 0.8) 0%, rgba(147, 251, 157, 0.8) 74%);
+  position: absolute;
+  top: -300px;
+  box-sizing: border-box;
+  padding: 6%;
+  transition: all 0.5s ease-in-out;
+  z-index: 11;
+}
+
+.text {
+  margin-left: 20px;
+  color: #fff;
+  display: none;
+  transition: all 0.5s ease-in-out;
+  transition-delay: 0.3s;
+}
+.text a, .text a:visited {
+  font-size: 36px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+}
+.text hr {
+  width: 10%;
+  float: left;
+  background-color: #fff;
+  font-size: 16px;
+}
+.text input {
+  margin-top: 30px;
+  height: 40px;
+  width: 90%;
+  max-width: 300px;
+  border-radius: 2px;
+  border: none;
+  background-color: #fff;
+  opacity: 0.9;
+  outline: none;
+  color: #fff;
+  padding-left: 10px;
+}
+.text input[type=text] {
+  margin-top: 60px;
+  color: #09c7fb;
+}
+.text button {
+  margin-top: 60px;
+  height: 40px;
+  width: 140px;
+  outline: none;
+  cursor: pointer;
+}
+.text .login-btn {
+  background: #fff;
+  border: none;
+  border-radius: 2px;
+  color: #09c7fb;
+}
+.text .signup-btn {
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  color: #fff;
+  margin-left: 30px;
+}
+
+.cta {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #696a86;
+  border: 2px solid #fff;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  z-index: 11;
+}
+
+.call-text {
+  background-color: #fff;
+  width: 100%;
+  height: 450px;
+  position: absolute;
+  bottom: 0;
+  padding: 10%;
+  box-sizing: border-box;
+  text-align: center;
+}
+.call-text h1 {
+  font-size: 36px;
+  margin-top: 10%;
+  color: #09c7fb;
+}
+.call-text h1 span {
+  color: #333;
+  font-weight: bolder;
+}
+.call-text button {
+  height: 40px;
+  width: 180px;
+  border: none;
+  border-radius: 20px;
+  background-color: #09c7fb;
+  background-image: linear-gradient(315deg, #09c7fb 0%, #93fb9d 74%);
+  color: #fff;
+  font-weight: bolder;
+  margin-top: 30px;
+  cursor: pointer;
+  outline: none;
+}
+
+.show-hide {
+  display: block;
+}
+
+.expand {
+  transform: translateY(300px);
+}
+
+.signup-form {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  padding-top: 100px;
+  box-sizing: border-box;
+  z-index: 12;
+}
+
+.signup-form h2 {
+  font-size: 24px;
+  color: #09c7fb;
+}
+
+.signup-form input {
+  display: block;
+  width: 90%;
+  max-width: 300px;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.signup-form .submit-btn,
+.signup-form .back-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  margin: 20px 10px;
+  cursor: pointer;
+}
+
+.signup-form .submit-btn {
+  background-color: #09c7fb;
+  background-image: linear-gradient(315deg, #09c7fb 0%, #93fb9d 74%);
+  color: #fff;
+}
+
+.signup-form .back-btn {
+  background-color: #696a86;
+  color: #fff;
+}
+
+.signup-form .error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .call-text h1 {
+    font-size: 28px;
+  }
+
+  .call-text button {
+    width: 150px;
+  }
+
+  .signup-form h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .call-text h1 {
+    font-size: 24px;
+  }
+
+  .call-text button {
+    width: 130px;
+  }
+
+  .signup-form h2 {
+    font-size: 18px;
+  }
+}
